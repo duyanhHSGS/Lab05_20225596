@@ -1,0 +1,31 @@
+DVD,The Lion King,Animation,Roger Allers,87,19.95
+Book,Harry Potter and the Philosopher's Stone,Fantasy,10.99,J.K. Rowling
+CD,Greatest Hits,Music,Various Directors,60,15.0,Various Artists,Track One,5,Track Two,4,Track Three,6
+DVD,Star Wars,Science Fiction,George Lucas,121,24.95
+Book,The Hobbit,Fantasy,12.99,J.R.R. Tolkien
+CD,Classical Collection,Classical,Various Directors,70,20.0,Various Artists,Symphony No. 5,7,Canon in D,6,Fur Elise,5
+DVD,Aladdin,Animation,John Musker,90,18.99
+Book,To Kill a Mockingbird,Fiction,8.99,Harper Lee
+CD,Rock Anthems,Rock,Various Directors,80,18.0,Various Artists,We Will Rock You,3,Eye of the Tiger,4,Smoke on the Water,5
+DVD,The Godfather,Crime,Francis Ford Coppola,175,25.99
+Book,1984,Science Fiction,9.99,George Orwell
+CD,Jazz Classics,Jazz,Various Directors,65,16.0,Various Artists,Take Five,6,So What,9,Blue in Green,5
+DVD,Pulp Fiction,Crime,Quentin Tarantino,154,22.99
+Book,The Great Gatsby,Fiction,7.99,F. Scott Fitzgerald
+CD,Pop Hits,Pop,Various Directors,75,17.0,Various Artists,Billie Jean,4,Like a Prayer,5,Thriller,6
+DVD,The Dark Knight,Action,Christopher Nolan,152,20.99
+Book,Moby Dick,Adventure,11.99,Herman Melville
+CD,Country Legends,Country,Various Directors,55,14.0,Various Artists,Take Me Home,3,Country Roads,4,Jolene,5
+DVD,Schindler's List,Biography,Steven Spielberg,195,19.99
+Book,Pride and Prejudice,Romance,6.99,Jane Austen
+CD,Hip Hop Essentials,Hip Hop,Various Directors,70,19.0,Various Artists,Lose Yourself,5,Juicy,4,99 Problems,6
+DVD,The Lord of the Rings: The Fellowship of the Ring,Fantasy,Peter Jackson,178,23.95
+Book,War and Peace,Historical,13.99,Leo Tolstoy
+CD,Electronic Vibes,Electronic,Various Directors,65,20.0,Various Artists,Sandstorm,6,Strobe,9,Animals,5
+DVD,Forrest Gump,Drama,Robert Zemeckis,142,19.95
+Book,The Catcher in the Rye,Fiction,8.49,J.D. Salinger
+CD,Blues Masters,Blues,Various Directors,60,15.0,Various Artists,The Thrill Is Gone,5,Stormy Monday,6,Red House,5
+DVD,Inception,Sci-Fi,Christopher Nolan,148,21.95
+Book,The Lord of the Rings,Fantasy,15.99,J.R.R. Tolkien
+
+

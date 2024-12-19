@@ -1,0 +1,42 @@
+Question located: - Which classes are aggregates of other classes? Checking all constructors of whole classes if they initialize for their parts?
+- Store and Cart aggregate Media objects.
+- CompactDisc aggregates Track objects.
+
+Question located: If the passing object is not an instance of Media, what happens?
+- ClassCastException, the object type is too big. Have to cast it down to Media for it to handle.
+- The passing object in the equal(anotherObject) method's type must be Media.
+
+Question located: After the call of changeTitle(jungleDVD, cinderellaDVD.getTitle()) why is the title of the JungleDVD changed?
+- Because of the "dvd.setTitle(title);" the dvd in here is jungleDVD, so it modifies its name
+- The codes "dvd = new DigitalVideoDisc(oldTitle);" just make a new dvd object, and make the variable dvd points to it (by the time, it doesn't do anything meaningful for now)
+
+Question located: What class should implement the Comparable interface?
+- Media class, because it is the parent of all medias.
+
+Question located: In those classes, how should you implement the compareTo() method be to reflect the ordering that we want?
+    public int compareTo(Media other) {
+        int titleComparison = this.title.compareToIgnoreCase(other.title);
+        if (titleComparison != 0) {
+            return titleComparison;
+        }
+        return Float.compare(this.cost, other.cost);
+    }
+Question located: Can we have two ordering rules of the item (by title then cost and by cost then title) if we use this Comparable interface approach?
+- No.
+
+Question located: Suppose the DVDs have a different ordering rule from the other media types, that is by title, then decreasing length, then cost. How would you modify your code to allow this?
+    public int compareTo(Media other) {
+        if (other instanceof DigitalVideoDisc) {
+            DigitalVideoDisc otherDvd = (DigitalVideoDisc) other;
+            int titleComparison = this.title.compareToIgnoreCase(otherDvd.title);
+            if (titleComparison != 0) {
+                return titleComparison;
+            }
+            int lengthComparison = Integer.compare(otherDvd.length, this.length);
+            if (lengthComparison != 0) {
+                return lengthComparison;
+            }
+            return Float.compare(this.cost, otherDvd.cost);
+        }
+        return super.compareTo(other);
+    }

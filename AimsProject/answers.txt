@@ -1,0 +1,21 @@
+Question located: Try to add a method addDigitalVideoDisc which allows to pass an arbitrary number of arguments for dvd. Compare to an array parameter. What do you prefer in this case?
+
+public void addDigitalVideoDisc(DigitalVideoDisc... dvds) {
+    for (DigitalVideoDisc dvd : dvds) {
+        addDigitalVideoDisc(dvd);
+    }
+}
+This is better, no array needed to be initialized, easy to use!
+
+Question located: Is JAVA a Pass by Value or a Pass by Reference programming language? 
+- By value, all the time
+- Passing a primitive datatype, the method would be given a copy, of that value, not an address that stores it
+- Passing an object, the method would be given a copy, of that address, that stores it
+Question located: After the call of swap(jungleDVD, cinderellaDVD) why does the title of these two objects still remain?
+- It just passed the address of the object, and swapped them locally, not in the big main
+Question located: After the call of changeTitle(jungleDVD, cinderellaDVD.getTitle()) why is the title of the JungleDVD changed?
+- Because of the "dvd.setTitle(title);" the dvd in here is jungleDVD, so it modifies its name
+- The codes "dvd = new DigitalVideoDisc(oldTitle);" just make a new dvd object, and make the variable dvd points to it (by the time, it doesn't do anything meaningful for now)
+
+Question located: Write a toString() method for the DigitalVideoDisc class. What should be the return type of this method?
+- String

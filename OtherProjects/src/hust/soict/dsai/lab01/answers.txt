@@ -1,0 +1,15 @@
+- Chuong trinh tra ve "No" vi condition truoc do, tuc la chon "Yes" bi false
+- Muon chi co 2 lua chon thi chinh lai showConfirmDialog thanh showOptionDialog roi chinh ve dung tham so input
+vi du:
+Object[] options1 = {"Yes", "No"};
+        int option1 = JOptionPane.showOptionDialog(null, 
+                "Do you want to change to the first class ticket?", 
+                "Choose an option", 
+                JOptionPane.YES_NO_OPTION, 
+                JOptionPane.QUESTION_MESSAGE, 
+                null, 
+                options1, 
+                options1[0]);
+//truyen dung tham so cho showOptionDialog
+        JOptionPane.showMessageDialog(null, "You've chosen: " 
+                + (option1 == JOptionPane.YES_OPTION ? "Yes" : "No"));
