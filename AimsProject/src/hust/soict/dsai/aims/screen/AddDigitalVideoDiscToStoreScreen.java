@@ -1,13 +1,13 @@
 package hust.soict.dsai.aims.screen;
 
 import javax.swing.JFrame;
-
-import hust.soict.dsai.aims.store.Store;
-import javafx.application.Platform;
-import javafx.embed.swing.JFXPanel;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import hust.soict.dsai.aims.store.Store;
+import javafx.application.Platform;
+import javafx.embed.swing.JFXPanel;
+
 
 public class AddDigitalVideoDiscToStoreScreen extends JFrame{
 

@@ -22,22 +22,13 @@ import javax.swing.JMenuItem;
 import javax.swing.JPanel;
 
 import hust.soict.dsai.aims.cart.Cart;
-import hust.soict.dsai.aims.media.Book;
-import hust.soict.dsai.aims.media.CompactDisc;
-import hust.soict.dsai.aims.media.DigitalVideoDisc;
 import hust.soict.dsai.aims.media.Media;
-import hust.soict.dsai.aims.media.Track;
 import hust.soict.dsai.aims.store.Store;
 
 
 public class StoreScreen extends JFrame {
     private static Store store = new Store();
     private static Cart cart = new Cart();
-    
-    public static void main(String[] args) {
-		new StoreScreen(store);
-	}
-
 
     public StoreScreen(Store store) {
         StoreScreen.store = store;
@@ -136,8 +127,6 @@ public class StoreScreen extends JFrame {
             }
         });
         
-
-
         header.add(Box.createRigidArea(new Dimension(10, 10)));
         header.add(title);
         header.add(Box.createHorizontalGlue());
@@ -151,7 +140,6 @@ public class StoreScreen extends JFrame {
 
         JPanel center = new JPanel();
         center.setLayout(new GridLayout(3, 3, 2, 2));
-
 
         ArrayList<Media> mediaInStore = store.getItemsInStore();
         for (int i = 0; i < mediaInStore.size(); i++) {

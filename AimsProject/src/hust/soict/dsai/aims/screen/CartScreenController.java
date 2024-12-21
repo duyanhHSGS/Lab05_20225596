@@ -3,6 +3,7 @@ package hust.soict.dsai.aims.screen;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import hust.soict.dsai.aims.cart.Cart;
+import hust.soict.dsai.aims.exception.PlayerException;
 import hust.soict.dsai.aims.media.Media;
 import hust.soict.dsai.aims.media.Playable;
 import javafx.collections.transformation.FilteredList;
@@ -59,13 +60,21 @@ public class CartScreenController {
     
     @FXML
     void btnPlayPressed(ActionEvent event) {
-        tblMedia.getSelectionModel().getSelectedItem();
+        Media media = tblMedia.getSelectionModel().getSelectedItem();
         Alert alert;
-            alert = new Alert(Alert.AlertType.NONE, "warning");
+        try {
+            alert = new Alert(Alert.AlertType.NONE, ((Playable) media).play());
             alert.setTitle("Playing");
             alert.setHeaderText(null);
             alert.getDialogPane().getButtonTypes().add(ButtonType.OK);
             alert.showAndWait();
+        } catch (PlayerException e) {
+            alert = new Alert(Alert.AlertType.ERROR, e.getMessage());
+            alert.setTitle("ERROR");
+            alert.setHeaderText(null);
+            alert.showAndWait();
+        }
+        
     }
     
 	@FXML
