@@ -10,20 +10,19 @@ public class Cart {
 	private ObservableList<Media> itemsOrdered 
 	= FXCollections.observableArrayList();
 	public int qtyOrdered = 0;
-	public void addMedia(Media media) {
+	public String addMedia(Media media) {
 		if (itemsOrdered.size() == MAX_NUMBER_ORDERED) {
-			System.out.println("Cannot add more to cart, your cart is full!");
-			return;
+			return "Cannot add more to cart, your cart is full!";
 		}
 		if (itemsOrdered.contains(media)) {
-			System.out.println("Error: Item (" + media.getTitle() + ") already in your cart. Operation failed!");
-			return;
+			return "Error: Item (" + media.getTitle() + ") already in your cart. Operation failed!";
 		}
 		itemsOrdered.add(media);
-		System.out.println("Item (" + media.getTitle() + ") was added to your cart successfully!");
-		if (itemsOrdered.size() >= MAX_NUMBER_ORDERED - 2) {
-			System.out.println("Your cart is almost full! (" + itemsOrdered.size() + "/" + MAX_NUMBER_ORDERED + ")");
+		if (itemsOrdered.size() >= MAX_NUMBER_ORDERED - 2) {	
+			return "Item (" + media.getTitle() + ") was added to your cart successfully!" + 
+			"Your cart is almost full! (" + itemsOrdered.size() + "/" + MAX_NUMBER_ORDERED + ")";
 		}
+		return "Item (" + media.getTitle() + ") was added to your cart successfully!";
 	}
 	public void removeMedia(Media media) {
 		if (itemsOrdered.remove(media)) {

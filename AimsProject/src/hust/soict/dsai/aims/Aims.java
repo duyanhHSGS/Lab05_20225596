@@ -77,7 +77,6 @@ public class Aims {
 	    }
 	}
 	//initiate
-	private static Cart cart = new Cart();
 	private static Store store = new Store();
 //---------------------------------------------------------------------------------
 	//main

@@ -9,7 +9,10 @@ import javafx.scene.Scene;
 import hust.soict.dsai.aims.cart.Cart;
 
 public class CartScreen extends JFrame {
+
+
 	    private static Cart cart;
+	    
 	    public static void main(String[] args) {
 			new CartScreen(cart);
 		}

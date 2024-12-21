@@ -1,13 +1,13 @@
 package hust.soict.dsai.aims.screen;
 
 import javax.swing.JFrame;
-
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import hust.soict.dsai.aims.store.Store;
 import javafx.application.Platform;
 import javafx.embed.swing.JFXPanel;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
+
 
 public class AddBookToStoreScreen extends JFrame{
 
@@ -20,6 +20,7 @@ public class AddBookToStoreScreen extends JFrame{
     public AddBookToStoreScreen(Store store) {
 
         super();
+
         AddBookToStoreScreen.store = store;
 
         JFXPanel fxPanel = new JFXPanel();
