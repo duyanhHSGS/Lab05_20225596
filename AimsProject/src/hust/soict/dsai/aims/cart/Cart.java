@@ -9,6 +9,7 @@ public class Cart {
 	public static final int MAX_NUMBER_ORDERED = 20;
 	private ObservableList<Media> itemsOrdered 
 	= FXCollections.observableArrayList();
+	public int qtyOrdered = 0;
 	public void addMedia(Media media) {
 		if (itemsOrdered.size() == MAX_NUMBER_ORDERED) {
 			System.out.println("Cannot add more to cart, your cart is full!");
@@ -97,4 +98,13 @@ public class Cart {
 	public ObservableList<Media> getItemsOrdered() {
 		return itemsOrdered;
 	}
+    public String placeOrder() {
+        if (itemsOrdered.size() == 0) {
+            return "Your cart is empty!";
+        } else {
+            qtyOrdered = 0;
+            itemsOrdered.clear();
+            return "Order created!\n" + "Now your cart will be empty!";
+        }
+    }
 }
