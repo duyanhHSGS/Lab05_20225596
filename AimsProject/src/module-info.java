@@ -11,4 +11,6 @@ module AimsProject{
 	requires javafx.swing;
 	requires javafx.base;
 	requires javafx.controls;
+	requires java.naming;
+	opens hust.soict.dsai.aims.screen to javafx.fxml;
 }
