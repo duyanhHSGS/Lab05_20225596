@@ -33,28 +33,8 @@ import hust.soict.dsai.aims.store.Store;
 public class StoreScreen extends JFrame {
     private static Store store = new Store();
     private static Cart cart = new Cart();
-
-    public static void initSetup() {
-
-        DigitalVideoDisc dvd1 = new DigitalVideoDisc("The Lion King", "Animation", "Roger Allers", 87, 19.95f);     
-        DigitalVideoDisc dvd2 = new DigitalVideoDisc("Star War", "Science Fiction", "George Lucas", 87, 24.95f); 
-        DigitalVideoDisc dvd3 = new DigitalVideoDisc("Aladin", "Animation", null, 0, 18.99f);
-        store.addMedia(dvd1);
-        store.addMedia(dvd2);
-        store.addMedia(dvd3);
-        
-    
-        Book book = new Book("The Valley of Fear", "Detective", 20.00f);
-        Book book1 = new Book("A Living Remedy: A Memoir", "Biography", 202.00f);
-        Book book2 = new Book("On the Origin of Time: Stephen Hawking's Final Theory", "Science", 120.00f);
-        store.addMedia(book);
-        store.addMedia(book1);
-        store.addMedia(book2);
-        
-    }
     
     public static void main(String[] args) {
-        initSetup();
 		new StoreScreen(store);
 	}
 
