@@ -59,7 +59,7 @@ public class CartScreenController {
     
     @FXML
     void btnPlayPressed(ActionEvent event) {
-        Media media = tblMedia.getSelectionModel().getSelectedItem();
+        tblMedia.getSelectionModel().getSelectedItem();
         Alert alert;
             alert = new Alert(Alert.AlertType.NONE, "warning");
             alert.setTitle("Playing");
