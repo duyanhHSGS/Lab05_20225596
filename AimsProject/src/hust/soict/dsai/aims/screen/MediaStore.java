@@ -51,8 +51,7 @@ public class MediaStore extends JPanel {
                     dialog.setTitle(media.getTitle());
                     dialog.setSize(400, 300);
 
-                    String mediaInfo = "";
-                        mediaInfo = "Load";
+                    String mediaInfo = "Loading";
                         JLabel mediaLabel = new JLabel(mediaInfo);
                         mediaLabel.setVerticalAlignment(JLabel.CENTER); 
                         mediaLabel.setHorizontalAlignment(JLabel.CENTER);
